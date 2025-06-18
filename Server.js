@@ -45,3 +45,8 @@ mongoose.connect('mongodb+srv://sanjay:abc1234@cluster0.tldtm.mongodb.net/yumio'
 })
 
 
+
+
+
+// Required for Vercel deployment
+module.exports = web;
