@@ -23,7 +23,7 @@ web.get('/', (req, res) => {
 });
 
 // Connect to MongoDB FIRST, then start server
-mongoose.connect('mongodb+srv://sanjay:abc1234@cluster0.tldtm.mongodb.net/yumio', {
+mongoose.connect('mongodb+srv://sanjay:abc1234@cluster0.tldtm.mongodb.net/yumio?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
